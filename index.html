@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a65688b8f2.js" crossorigin="anonymous"></script>
+    <title>Rinterio</title>
+    <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    
+</head>
+<body class="font-manrope">
+
+    <header class="container mx-auto lg:w-4/5 mt-5 px-5">
+        <!-- nav section  -->
+       <nav>
+        <div class="navbar ">
+            <div class="navbar-start ">
+              <!-- <div class="dropdown ">
+                <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden ">
+                  <!-- <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg> 
+                  <svg xmlns="http://www.w3.org/2000/svg"   class="h-5 w-5 border  rounded-full  " viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content  z-[1] mt-3 w-52 p-2 ">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div> -->
+              <i class="fa-solid fa-arrow-right -rotate-45 border rounded-full bg-[#ABEF5F] p-1"></i>  <a class=" text-2xl font-extrabold  pl-3 ">  Rinterio </a>
+            </div>
+
+            <div class="dropdown ">
+              <div tabindex="0" role="button" class="btn btn-ghost ml-32 lg:hidden ">
+                <!-- <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg> --> 
+                <div class="border rounded-full p-2 border-slate-200">
+                  <svg xmlns="http://www.w3.org/2000/svg"   class="h-6 w-6   " viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                </div>
+               
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content  z-[1] mt-3 w-52 p-2 ">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-center hidden lg:flex gap-3 text-sm text-[#737373] mr-28 ">
+               <ul class="menu menu-horizontal px-1">
+                <li><a class="hover:text-[#494949]">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact us</a></li>
+              </ul> 
+            
+              <!-- <h5 class="hover:text-[#494949]">Home</h5>
+              <h5>Services</h5>
+              <h5>Portfolio</h5>
+              <h5>Blogs</h5>
+              <h5>Contact us</h5> -->
+            </div>
+            <div class="navbar-end space-x-3 hidden md:flex"><i class="fa-solid fa-magnifying-glass border rounded-full bg-[#FFFFFF] p-2 "></i>
+              <i class="fa-solid fa-cart-shopping border rounded-full bg-[#FFFFFF] p-2 "></i>
+              <a class="btn rounded-full font-extrabold text-xl bg-[#ABEF5F]">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-black text-[#ABEF5F]  p-1"></i>  </a>
+            </div>
+          </div>
+       </nav>
+
+
+       <!-- banner section  -->
+        <section class="  mt-5">
+          <div class="">
+            <img class=" lg:container lg:mx-auto  lg:max-w-screen-sm" src="assets/banner.png" alt="">
+          </div>
+          
+
+          <div class="hero ">
+            <div class="hero-content ">
+              <div class="">
+                <h1 class="text-3xl lg:text-6xl font-extrabold text-center text-[#212121] pb-8">A barn house of this design has a striking appearance</h1>
+                <p class="text-center font-medium pb-8">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <div class="text-center max-w-screen-xl">
+                  <button class="btn w-full md:w-1/4 bg-lime-200 border-lime-500 text-black rounded-full font-bold text-xl ">View Details   <i class="fa-solid fa-arrow-right -rotate-45 border rounded-full bg-[#ABEF5F] p-1"></i>  </button>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </section>
+    </header>
+
+    <main>
+
+      <!-- about section  -->
+       <section class="mt-5 bg-slate-100">
+        <div class="grid grid-cols-1 lg:grid-cols-2 container mx-auto lg:w-11/12">
+          <div>
+            <img class="mt-8" src="assets/Vector.png" alt="">
+            <div class="ml-16 mt-5 rounded-full bg-white px-5 py-2 w-1/4">
+              <h3 class="font-bold"><i class="fa-solid fa-arrow-right px-2"></i>About us</h3>
+            </div>
+            <div class="ml-16 mt-5" >
+              <h1 class="text-4xl font-extrabold pb-4">We design thoughtful, liveable spaces</h1>
+              <p class="text-sm font-medium text-[#494949]">The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+
+            <div class="flex mt-8 gap-5 border rounded-lg bg-white w-4/5 ml-16 px-5 py-3">
+              <div>
+                <img class="py-5" src="assets/commercial.png" alt="">
+              </div>
+              <div>
+                <h5 class="font-bold text-lg py-2">Commercial</h5>
+                <p class="text-sm font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+
+            <div class="flex mt-5 gap-5 border rounded-lg bg-white w-4/5 ml-16 px-5 py-3">
+              <div>
+                <img class="py-5" src="assets/residential.png" alt="">
+              </div>
+              <div>
+                <h5 class="font-bold text-lg py-2">Residential</h5>
+                <p class="text-sm font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+            
+           
+
+          </div>
+
+          <div class="mx-auto mt-28">
+            <img class="max-w-md" src="assets/Rectangle.png" alt="">
+           
+          </div>
+        </div>
+       </section>
+    </main>
+
+
+    <footer></footer>
+    
+</body>
+</html>
